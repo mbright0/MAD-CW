@@ -16,20 +16,36 @@ class HomeScreen extends StatelessWidget{
 	   itemBuilder: (context, index) {
 	     final recipe = sampleRecipes[index];
 	     return Card(
-	       child: ListTile(
-		 leading: Image.asset(recipe.imagePath, width: 56, fit: BoxFit.cover),
-		 title:   Text(recipe.name),
-		 trailing: const Icon(Icons.chevron_right),
-		 onTap: () {
-		   Navigator.push(
-		     context,
-		     MaterialPageRoute(
-		       builder: (_) => DetailsScreen(recipe: recipe),
-		     ),
-		   );
-		 },
-	       ),
-	     );
+	      margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+	      child: InkWell(
+		onTap: () {
+		  Navigator.push(
+		    context,
+		    MaterialPageRoute(
+		      builder: (_) => DetailsScreen(recipe: recipe),
+		    ),
+		  );
+		},
+		child: Column(
+		  crossAxisAlignment: CrossAxisAlignment.start,
+		  children: [
+		    Image.asset( recipe.imagePath, width: double.infinity, height: 180,
+		      fit: BoxFit.cover),
+
+		    Padding(
+		      padding: const EdgeInsets.all(16),
+		      child: Text(
+			recipe.name,
+			style: const TextStyle(
+			  fontSize: 20,
+			),
+		      ),
+		    ),
+
+		  ],
+		),
+	      ),
+	    ); 
 	   },
 	 ),
       );
