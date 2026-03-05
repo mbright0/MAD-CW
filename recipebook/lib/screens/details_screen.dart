@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart';
+import '../models/recipe.dart';
+
 class DetailsScreen extends StatelessWidget {
   final Recipe recipe;
   const DetailsScreen({super.key, required this.recipe});
@@ -13,6 +16,7 @@ class DetailsScreen extends StatelessWidget {
             // Hero image
             Image.asset(recipe.imagePath, height: 220, width: double.infinity, fit: BoxFit.cover),
             // Name, Ingredients, Instructions…
+
           ],
         ),
       ),

@@ -8,21 +8,21 @@ final List<Recipe> sampleRecipes = [
     instructions: 'Cook pasta. Brown beef with onion & garlic. Add sauce. Combine & serve.',
   ),
   // Add 3+ more recipes…
-  Recipe_2(
+ Recipe(
    name: 'Meatlovers Pizza',
    imagePath: 'assets/images/pizza.jpg',
    ingredients: ['Pizza dough', 'Pizza Sauce', 'Shredded Mozzarella', 'Pepperoni', 'Diced Ham', 'Diced Turkey'],
    instructions: 'Flatten pizza dough. Add pizza sauce on dough then cover in mozzarella. Add pepperoni, diced ham and turkey. Place in oven',
   ),
 
-  Recipe_3(
+  Recipe(
    name: 'Italian Sandwhich',
    imagePath: 'assets/images/sandwhich.jpg',
    ingredients: ['Italian Cooked Ham', 'Salami', 'Pepperoni', 'Provolone', 'Italian Seasoning', 'Salt', 'Pepper', 'Hoagie Roll'],
    instructions: 'Hollow out Hoagie Roll. Place ham, salami, pepperoni, and slices of provolone inhollowed out bread. Add seasoning, salt, and pepper.',
   ),
 
-  Recipe_4(
+  Recipe(
    name: 'Mushroom Risotto',
    imagePath: 'assets/images/risotto.jpg',
    ingredients: ['Mushrooms', 'Rice', 'Onion', 'Garlic', 'Pecorino Cheese', 'Parsley', 'Salt', 'Pepper', 'Broth'],
