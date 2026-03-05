@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
  
   late final AnimationController _controller;
   late final Animation<double> _fade;
-  late Animation<double> _animation;
+  lateAnimation<double> _animation;
 
   @override
   void initState() {
@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
       if(_history.length == 5){
 	 _history.removeAt(0);
       }
-      _history.add(_counter);
+   _history.add(_counter);
     });
   }
 
